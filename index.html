@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap" rel="stylesheet">
+  <script src="js/index.js"></script>
+  <title>html</title>
+</head>
+<body>
+    <img class="bg" src="imgs/bg.jpg">
+    <div class="container">
+        <form id="form1">
+            <h3>REGISTER HERE</h3>
+            <input type="text"placeholder="Your Name" name="Name" required="">
+            <input type="text"placeholder="Email" name="Email" required="">
+            <input type="number" placeholder="Mobile No." name="Mobile" required="">
+            
+            <div class="btn-box">
+                <button type="button" id="nxt">Next</button>
+            </div>
+        </form>
+        <form id="form2">
+
+            <h3>TEAM INFORMATION</h3>
+
+            <input type="text"placeholder="Team Name" name="Team-Name" required="">
+            <input type="text"placeholder="1st Player Name" name="1st-player" required="">
+            <input type="text"placeholder="2st Player Name" name="2st-player" required="">
+            <input type="text"placeholder="3st Player Name" name="3st-player" required="">
+            <input type="text"placeholder="4st Player Name" name="4st-player" required="">
+            
+            <div class="btn-box">
+                <button type="button" id="pre">Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+    var form1 = document.getElementById('form1');
+
+
+
+    var form2 = document.getElementById('form2');
+
+
+    var nxt = document.getElementById('nxt');
+    var pre = document.getElementById('pre');
+
+    nxt.onclick = function(){
+     form1.style.left = "-450px";
+     form2.style.left = "40px";
+    }
+    pre.onclick = function(){
+        form1.style.left = "40px";
+        form2.style.left = "450px";
+    }
+    </script>
+</body>
+</html>
